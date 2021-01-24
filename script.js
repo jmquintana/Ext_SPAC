@@ -91,7 +91,6 @@ document.addEventListener('click', event => {
   event.preventDefault()
   const tabla = document.querySelector('#tablaDePuntos')
   if (tabla) {
-    console.log('Le diste a Listar');
     addBtn();
   }
 });
