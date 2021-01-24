@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "SPAC",
+    "version": "1.0.0",
+    "description": "Herramienta para copiar Tabla de Puntos al Portapapeles.",
+    "icons": {
+        "128": "icons/128.png",
+        "48": "icons/48.png",
+        "32": "icons/32.png",
+        "16": "icons/16.png"
+    },
+    "content_scripts": [{
+        "js": ["inject.js"],
+        "css": ["style.css"],
+        "matches": ["https://www.etgs.com.ar/etgs/app/*"]
+    }],
+    "permissions": [
+        "storage",
+        "downloads",
+        "clipboardWrite"
+    ],
+    "web_accessible_resources": ["script.js", "styles.css"]
+}
