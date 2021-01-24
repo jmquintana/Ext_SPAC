@@ -69,7 +69,7 @@ function addBtn() {
   let prevBtn = document.querySelector(".btn")
   prevBtn ? prevBtn.remove() : false
   let btn = document.createElement('button')
-  let div = document.querySelector("#btnHolder")
+  let div = document.querySelector("#componenteError")
   div.appendChild(btn)
   btn.textContent = 'Copiar Tabla'
   btn.classList.add('btn')
